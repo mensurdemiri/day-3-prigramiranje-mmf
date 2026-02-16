@@ -1,0 +1,102 @@
+print(r'''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+first_choice = str.lower (input("You are driving alone at night in a place you are not familiar with and you have reached a place where your road splits into two. Which way do you go (left/right)\n "))
+
+if first_choice == "right":
+    print(r''' _______             _______
+|@|@|@|@|           |@|@|@|@|
+|@|@|@|@|   _____   |@|@|@|@|
+|@|@|@|@| /\_T_T_/\ |@|@|@|@|
+|@|@|@|@||/\ T T /\||@|@|@|@|
+ ~~~~/|~||~\/~T~\/~||~T~~T\~
+   /_,|_| \(-(O)-)/ |_|__|/
+  /~\      \\8_8//    |_ |_
+ (O_O)  /~~[_____]~~\   [(@)|
+       (  |       |  )    ~
+      [~` ]       [ '~]
+      |~~|         |~~|
+      |  |         |  |
+     _<\/>_       _<\/>_
+    /_====_\     /_====_\'''' + "\n This robot was there hiding. He found you and made you for Iftar. Game Over")
+    exit()
+else:
+    print("you have reached a tall mountain that you have to climb and while climbing you see a mountain hut(shelter)")
+second_choice = str.lower(input("You are very tired since you could not climb the mountain with your car but had to walk and want to take shelter in that mountain hut. Do you take shelter there (y/n)\n "))
+if second_choice == "y" or second_choice == "yes":
+    print("you had a good nights sleep and now it is daytime and have it easier to walk and get to the treasure")
+else:
+    print(r''',,'6''-,.
+        <====,.;;--.
+        _`---===. """==__
+      //""@@-\===\@@@@ ""\\
+     |( @@@  |===|  @@@  ||
+      \\ @@   |===|  @@  //
+        \\ @@ |===|@@@ //
+         \\  |===|  //
+___________\\|===| //_____,----""""""""""-----,_
+  """"---,__`\===`/ _________,---------,____    `,
+             |==||                           `\   \
+            |==| |          pb                 )   |
+           |==| |       _____         ______,--'   '
+           |=|  `----"""     `""""""""         _,-'
+            `=\     __,---"""-------------"""''
+                """"'''"\n You did not see this cobra resting and accidentally stepped on it and it has eaten you for suhur. Game Over ")
+    exit()
+third_choice = str.lower(input("while walking you see a pack of wolfs hunting form far away. Do you hide? (y/n)\n "))
+if third_choice == "y" or third_choice == "yes":
+    print("you made the right choice and they went past you without seeing you! ")
+else:
+    print("they saw you and started chasing you. They caught you but luckily they were fasting so you were saved by Allah! ")
+last_choice = str.lower(input("while getting to the treasure there is a lake in between you and the treasure do you wait for a boat or do you start swimming. Write S for swimming and W for waiting\n " ))
+if last_choice == "w" or last_choice == "wait":
+    print("A very nice man with an amazing boat picked you up and took you to the other side of the lake safely. You found the treasure and won the game!")
+else:
+    print(r"""
+
+                                                                              ,///////.           ./
+          __                    ___////,,,.._        ,//               __,---//////////,        .///
+         /o \/        __       /O            ``--.._///             ,-'  ) ) ) ) ) )''////_    /////
+<><      \__/\ __    /o \/     \__  \               ,'          _,-' ))`. ) ) ) ) ) ) ) ) )`-.//////
+ <><          /o \/  \__/\      __)  \           ___`.         / ()_)))))\ ) ) ) ) ) ) ) ) )////////
+   <><     __ \__/\_            \____/__,,,---''''  \\\        \____ )))))) ) ) ) ) ) ) ) ) \\\\\\\\
+ <><      /o \/  /o \/                               `\\        `````.)))/ ) ) ) ) ) ) ) ),-`\\\\\\\
+<><       \__/\  \__/\                                           ___,')),') ) ) ) )_),,--'    \\\\\\
+<><       __     __                  ___////,,,.._        ,//   (_______.\\)_),--'"            `\\\\
+>< <><   /o \/  /o \/     __        /O            ``--.._///             -\\\                    `\\\
+><  <><  \__/\  \__/\    /o \/      \__  \               ,'                \\\                     `\
+  <><                    \__/\       __)  \           ___`.
+<><                __                \____/__,,,---''''  \\\
+                  /o \/                                   `\\
+           __     \__/\    ___////,,,.._        ,//                                      ,///////.           ./
+          /o \/           /O            ``--.._///                                __,---//////////,        .///
+          \__/\           \__  \               ,'                              ,-'  ) ) ) ) ) )''////_    /////
+                           __)  \           ___`.                          _,-' ))`. ) ) ) ) ) ) ) ) )`-.//////
+                           \____/__,,,---''''  \\\                        / ()_)))))\ ) ) ) ) ) ) ) ) )////////
+                                                `\\                       \____ )))))) ) ) ) ) ) ) ) ) \\\\\\\\
+                                                                           `````.)))/ ) ) ) ) ) ) ) ),-`\\\\\\\
+                                                                            ___,')),') ) ) ) )_),,--'    \\\\\\
+                                                                           (_______.\\)_),--'"            `\\\\
+                                                                                    -\\\                    `\\\
+                                                                                      \\\                     `\ """ + "\n This group of piranhas ate you. Game Over")
